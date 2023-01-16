@@ -6,7 +6,7 @@ const orders: Order[] = [
   {
     '_id': '43129412nk3213123dsfa321312',
     'table': '1',
-    'status': 'DONE',
+    'status': 'WAITING',
     'products': [
       {
         'product': {
@@ -35,9 +35,9 @@ export function Orders() {
     <Container>
       <OrdersBoard icon="🕘" title="Fila de espera" orders={orders} />
 
-      <OrdersBoard icon="👨‍" title="Em preparação" orders={[]}/>
+      <OrdersBoard icon="👨‍" title="Em preparação" orders={[]} />
 
-      <OrdersBoard icon="☑️" title="Pronto!" orders={[]}/>
+      <OrdersBoard icon="☑️" title="Pronto!" orders={[]} />
     </Container>
 
   );
